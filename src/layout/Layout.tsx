@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaPlay, FaDownload, FaUpload } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaPlay, FaUpload } from 'react-icons/fa';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
