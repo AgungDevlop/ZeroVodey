@@ -3,7 +3,6 @@ import { FaPlay, FaDownload, FaUpload } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [showToast, setShowToast] = useState(true);
 
   return (
     <div className="flex flex-col min-h-screen">
