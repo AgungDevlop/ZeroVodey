@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { FaPlay, FaUpload } from 'react-icons/fa';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
