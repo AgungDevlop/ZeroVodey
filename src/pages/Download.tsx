@@ -5,9 +5,10 @@ export function Download() {
   const videoTitle = sessionStorage.getItem('videoTitle'); // Get video title from session storage
 
 const randomUrls = [
-    'https://otieu.com/4/10055984',
-    'https://smart-damage.com/HE9TFh',
-    'https://aviatorreproducesauciness.com/2082665'
+    'https://omg10.com/4/10055984',
+    'https://sorrowfulpsychology.com/HE9TFh',
+    'https://jp.duskedaruac.com/itV1YjcIZ1j9B6tHV/94691',
+    'https://dulyhagglermounting.com/2082665'
 ];
 
   const handleDownload = () => {
@@ -30,7 +31,7 @@ const randomUrls = [
         {videoUrl ? (
           <button
             onClick={handleDownload}
-            className="bg-green-500 text-white p-4 rounded flex items-center justify-center mx-auto"
+            className="bg-purple-500 text-white p-4 rounded flex items-center justify-center mx-auto"
           >
             <FaDownload className="mr-2" />
             Download Video

@@ -25,9 +25,10 @@ export function PlayVideo() {
   const videoBaseUrls = ['https://videy.doobs.my.id/e/'];
 
   const randomUrls = [
-    'https://otieu.com/4/10055984',
-    'https://smart-damage.com/HE9TFh',
-    'https://aviatorreproducesauciness.com/2082665'
+    'https://omg10.com/4/10055984',
+    'https://sorrowfulpsychology.com/HE9TFh',
+    'https://jp.duskedaruac.com/itV1YjcIZ1j9B6tHV/94691',
+    'https://dulyhagglermounting.com/2082665'
   ];
   
   useEffect(() => {
@@ -196,7 +197,7 @@ export function PlayVideo() {
       <h1 className="text-2xl font-bold mb-4 text-center break-words">{videoTitle}</h1>
 
       {/* Video Player dengan Fluid Player */}
-      <div className="mb-4 w-full h-[200px] rounded-lg overflow-hidden shadow-lg border border-green-900">
+      <div className="mb-4 w-full h-[200px] rounded-lg overflow-hidden shadow-lg border border-purple-900">
         <video id="video-id" className="w-full h-full object-contain" preload="metadata">
           <source src={videoUrl} type="video/mp4" />
           Browser Anda tidak mendukung tag video.
@@ -204,14 +205,14 @@ export function PlayVideo() {
       </div>
 
       {/* Copy URL Video */}
-      <div className="flex mb-4 border border-green-900 rounded-lg overflow-hidden">
+      <div className="flex mb-4 border border-purple-900 rounded-lg overflow-hidden">
         <input
           type="text"
           value={`https://${window.location.hostname}/${id}`}
           readOnly
           className="flex-1 p-3 bg-gray-800 text-white outline-none"
         />
-        <button onClick={handleCopy} className="bg-green-500 hover:bg-green-600 transition-colors text-white p-3">
+        <button onClick={handleCopy} className="bg-purple-500 hover:bg-purple-600 transition-colors text-white p-3">
           <FaCopy />
         </button>
       </div>
@@ -219,14 +220,14 @@ export function PlayVideo() {
       {/* Tombol Download */}
       <button
         onClick={handleDownloadClick}
-        className="w-full bg-green-500 hover:bg-green-600 transition-colors text-white py-3 rounded-lg flex items-center justify-center font-semibold mb-4 shadow-md"
+        className="w-full bg-purple-500 hover:bg-purple-600 transition-colors text-white py-3 rounded-lg flex items-center justify-center font-semibold mb-4 shadow-md"
       >
         <FaDownload className="mr-2" />
         Download
       </button>
 
       {/* Search Bar */}
-      <div className="flex mb-4 border border-green-900 rounded-lg overflow-hidden">
+      <div className="flex mb-4 border border-purple-900 rounded-lg overflow-hidden">
         <input
           type="text"
           placeholder="Search videos..."
@@ -234,7 +235,7 @@ export function PlayVideo() {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="flex-1 p-3 bg-gray-800 text-white outline-none"
         />
-        <button onClick={() => handlePageChange(1)} className="bg-green-500 hover:bg-green-600 transition-colors text-white p-3">
+        <button onClick={() => handlePageChange(1)} className="bg-purple-500 hover:bg-purple-600 transition-colors text-white p-3">
           <FaSearch />
         </button>
       </div>
@@ -245,7 +246,7 @@ export function PlayVideo() {
           <div
             key={video.id}
             onClick={() => handleCardClick(video.id)}
-            className="border border-green-900 p-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors shadow-md cursor-pointer"
+            className="border border-purple-900 p-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors shadow-md cursor-pointer"
           >
             {/* Thumbnail Video */}
             <div className="w-full h-32 rounded-lg overflow-hidden mb-2">
@@ -299,8 +300,8 @@ export function PlayVideo() {
                   key={pageNumber}
                   onClick={() => handlePageChange(pageNumber)}
                   className={`mx-1 p-2 rounded ${
-                    currentPage === pageNumber ? 'bg-green-500' : 'bg-gray-700'
-                  } hover:bg-green-600 transition-colors text-white`}
+                    currentPage === pageNumber ? 'bg-purple-500' : 'bg-gray-700'
+                  } hover:bg-purple-600 transition-colors text-white`}
                 >
                   {pageNumber}
                 </button>
@@ -314,7 +315,7 @@ export function PlayVideo() {
               <span className="mx-1 text-gray-400">...</span>
               <button
                 onClick={() => handlePageChange(totalPages)}
-                className="mx-1 p-2 rounded bg-gray-700 hover:bg-green-600 transition-colors text-white"
+                className="mx-1 p-2 rounded bg-gray-700 hover:bg-purple-600 transition-colors text-white"
               >
                 {totalPages}
               </button>
