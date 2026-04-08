@@ -24,26 +24,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         </a>
       </header>
 
-      {/* Toast Notification */}
-      {showToast && (
-        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-purple-900 text-white p-3 rounded-lg shadow-lg flex items-center justify-between space-x-4 w-[90%] max-w-3xl">
-          <div className="flex items-center space-x-3">
-            <FaDownload size={24} className="text-white" /> {/* Ikon APK */}
-            <span className="font-semibold">Install DoobStream Apk</span>
-          </div>
-          <Link
-            to="https://github.com/AgungDevlop/Viral/raw/refs/heads/main/DoobStream.apk"
-            className="bg-purple-800 text-white px-3 py-1 rounded font-medium hover:bg-purple-700 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Install
-          </Link>
-          <button onClick={() => setShowToast(false)} className="text-white ml-2 text-xl font-bold">
-            ×
-          </button>
-        </div>
-      )}
 
       {/* Main Content */}
       <main className="flex-1 bg-gray-900 text-white pt-16">
