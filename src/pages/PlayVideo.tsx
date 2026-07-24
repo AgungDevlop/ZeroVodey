@@ -25,11 +25,8 @@ export function PlayVideo() {
   const videoBaseUrls = ['https://videy.doobs.my.id/e/'];
 
   const randomUrls = [
-    'https://omg10.com/4/10055984',
-    'https://sorrowfulpsychology.com/HE9TFh',
-    'https://jp.duskedaruac.com/itV1YjcIZ1j9B6tHV/94691',
-    'https://dulyhagglermounting.com/2082665'
-  ];
+    'https://dulyhagglermounting.com/2082665',
+    ];
   
   useEffect(() => {
     const fetchVideoData = async () => {
