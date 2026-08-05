@@ -5,9 +5,7 @@ export function Download() {
   const videoTitle = sessionStorage.getItem('videoTitle'); // Get video title from session storage
 
 const randomUrls = [
-    'https://omg10.com/4/10055984',
-    'https://sorrowfulpsychology.com/HE9TFh',
-    'https://jp.duskedaruac.com/itV1YjcIZ1j9B6tHV/94691',
+    'https://viiukuhe.com/dc/?blockID=427841',
     'https://dulyhagglermounting.com/2082665'
 ];
 
