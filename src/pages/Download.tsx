@@ -5,7 +5,7 @@ export function Download() {
   const videoTitle = sessionStorage.getItem('videoTitle'); // Get video title from session storage
 
 const randomUrls = [
-    'https://sorrowfulpsychology.com/HE9TFh',
+    'https://bmadss.com/get/?spot_id=2026313&cat=25&subid=1576043020',
     'https://dulyhagglermounting.com/2082665'
 ];
 
